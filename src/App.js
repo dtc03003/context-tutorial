@@ -1,10 +1,15 @@
-import './App.css';
+import ColorBox from './components/ColorBox';
+import { ColorProvider } from './contexts/color';
+import SelectColors from './components/SelectColor';
 
 function App() {
   return (
-    <div className="App">
-
-    </div>
+    <ColorProvider>
+      <div>
+        <SelectColors />
+        <ColorBox/>
+      </div>
+    </ColorProvider>
   );
 }
 
